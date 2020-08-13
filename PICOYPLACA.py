@@ -34,14 +34,17 @@ class MyWindow (QMainWindow):
         self.tbxnumber=QLineEdit(self)
         self.tbxnumber.move(50,50)
         self.tbxnumber.setPlaceholderText("PBD-8032")
+        self.tbxnumber.setMaxLength(8)
         
         self.tbxdate=QLineEdit(self)
         self.tbxdate.move(175,50)
         self.tbxdate.setPlaceholderText("dd/mm/yy")        
+        self.tbxdate.setMaxLength(10)
         
         self.tbxtime=QLineEdit(self)
         self.tbxtime.move(300,50)
         self.tbxtime.setPlaceholderText("hh:mm")
+        self.tbxtime.setMaxLength(5)
         
         self.btncheck=QtWidgets.QPushButton(self)
         self.btncheck.setText("Check")
